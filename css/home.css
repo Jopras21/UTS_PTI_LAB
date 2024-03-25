@@ -1,0 +1,84 @@
+.balance-amount-text {
+    font-size: 1.4em;
+    line-height: 1.4;
+    margin-left: 10px;
+}
+
+.transaction-name {
+    font-weight: 600;
+}
+
+.transaction-category {
+    font-size: 0.8em;
+}
+
+.transaction-card .transaction-detail,
+.transaction-card .transaction-amount {
+    width: 50%;
+}
+.transaction-card .transaction-amount {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+    .transaction-list-section {
+        height: calc(100vh - 360px);
+    }
+
+    .transaction-list-section > .card,
+    .transaction-list-section > .card > .card-body,
+    .transaction-list-section > .card > .card-body > .transaction-list {
+        height: 100%;
+    }
+
+    .transaction-list-section > .card > .card-body > .transaction-list {
+        height: calc(100% - 88px);
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+}
+
+.transaction-list-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .transaction-list-section {
+        max-height: calc(100vh - 120px);
+    }
+
+    .transaction-list-section > .card,
+    .transaction-list-section > .card > .card-body,
+    .transaction-list-section > .card > .card-body > .transaction-list {
+        height: 97.8%;
+    }
+
+    .transaction-list-section > .card > .card-body > .transaction-list {
+        height: calc(100% - 40px);
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+}
+.select-category {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .select-category {
+        width: 100%;
+    }
+
+    .transaction-list-header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
