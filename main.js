@@ -4,7 +4,7 @@ $(document).ready(function () {
     const updatedTransactions = allTransactions.filter((transaction) => transaction.username !== username)
 
     const redirectToLoginPage = () => {
-        window.location.href = "login.html"
+        window.location.href = "index.html"
     }
 
     const displayGreeting = (username) => {
